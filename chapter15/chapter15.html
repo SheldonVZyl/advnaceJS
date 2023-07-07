@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--script src="https://linktolibrary.com/librarycode.js"></script>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/
+jquery.min.js"></script>
+</head>
+
+<body>
+    <p>Let's play a game!</p>
+    <p>Of hide and seek...</p>
+    <p class="easy">I'm easy to find!</p>
+    <button id="hidebutton">Great idea</button>
+    <button id="revealbutton">Found you!</button>
+    <script>
+        $(document).ready(function () {
+            $("#hidebutton").click(function () {
+                $("p").hide();
+            });
+            $("#revealbutton").click(function () {
+                $(".easy").show();
+            });
+        });
+    </script>
+</body>
+
+</html-->
+
+<!--html>
+
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        svg {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <svg id="drawing-area" height=100 width=500></svg>
+    <script>
+        let svg = d3.select("#drawing-area");
+        svg.append("circle")
+            .attr("cx", 100).attr("cy", 50).attr("r", 20).style("fill",
+                "pink");
+        svg.append("circle")
+            .attr("cx", 200).attr("cy", 20).attr("r", 20).style("fill",
+                "black");
+        svg.append("circle")
+            .attr("cx", 300).attr("cy", 70).attr("r", 20).style("fill",
+                "grey");
+    </script>
+</body>
+
+</html-->
+
+<!---html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/
+underscore-umd-min.js"></script>
+</head>
+
+<body>
+    <script>
+        _.each([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], alert);
+    </script>
+</body>
+
+</html-->
+
+<!--div id="root"></div>
+ReactDOM.render(
+<p> Hi Emile, what's up?</p>,
+document.getElementById('root');
+);
+
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.
+development.js" crossorigin></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        let p = React.createElement("p", null, "Hi Emile, what's up?");
+        ReactDOM.render(
+            p,
+            document.getElementById("root")
+        );
+    </script>
+</body>
+
+</html>
+
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<body>
+    <div id="app">
+        <p v-if="!hide">
+            Let's play hide and seek. <br />
+            Go to the console and type: <br />
+            obj._data.hide = true <br />
+        </p>
+    </div>
+    <script>
+        let obj = new Vue({
+            el: "#app",
+            data: {
+                hide: false,
+            },
+        });
+    </script>
+</body>
+
+</html-->
+
+<div id="custom-component">
+    <maaike></maaike>
+</div>
+<script>
+    Vue.component("maaike", {
+        template: "<p>Maaike says: good job!</p>",
+    });
+    new Vue({ el: "#app" });
+</script>
+
+
+<ul>
+    <li ng-repeat="task in tasks">
+        {{task}}<span ng-click="deleteTask($index)">Done</span>
+    </li>
+</ul>
+
